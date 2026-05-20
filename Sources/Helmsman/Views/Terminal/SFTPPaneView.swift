@@ -1,4 +1,4 @@
-// SFTPPaneView.swift — Helmsman
+// Guardicore_connector
 // Graphical file browser for the remote SFTP side of an SSH session.
 // Tracks cwd via OSC 7 (session.currentDirectory).
 //

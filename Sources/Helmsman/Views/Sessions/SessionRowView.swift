@@ -1,4 +1,4 @@
-// SessionRowView.swift — Helmsman
+// Guardicore_connector
 
 import SwiftUI
 import SSHKit

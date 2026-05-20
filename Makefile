@@ -1,16 +1,16 @@
-# Helmsman — macOS Unified Remote Computing Toolbox
+# Guardicore_connector — macOS Guardicore Operations Toolbox — macOS Unified Remote Computing Toolbox
 # ─────────────────────────────────────────────────
 # Prerequisites: brew install xcodegen swiftlint
 
 .PHONY: all generate build test lint clean dmg notarize
 
 # ── Config ──────────────────────────────────────────────────────────────────
-SCHEME        := Helmsman
+SCHEME        := Guardicore_connector
 CONFIGURATION ?= Debug
 DERIVED_DATA  := .build/DerivedData
-ARCHIVE_PATH  := .build/Helmsman.xcarchive
+ARCHIVE_PATH  := .build/Guardicore_connector.xcarchive
 EXPORT_PATH   := .build/export
-DMG_NAME      := Helmsman.dmg
+DMG_NAME      := Guardicore_connector.dmg
 
 # ── Primary targets ──────────────────────────────────────────────────────────
 all: generate build
@@ -18,7 +18,7 @@ all: generate build
 generate:
 	@echo "▶ Generating Xcode project..."
 	xcodegen generate
-	@echo "✓ Helmsman.xcodeproj ready"
+	@echo "✓ Guardicore_connector.xcodeproj ready"
 
 build: generate
 	@echo "▶ Building ($(CONFIGURATION))..."
@@ -71,7 +71,7 @@ clean:
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
 open: generate
-	open Helmsman.xcodeproj
+	open Guardicore_connector.xcodeproj
 
 brew-deps:
 	brew install xcodegen swiftlint xcpretty || true

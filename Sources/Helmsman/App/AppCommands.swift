@@ -1,4 +1,4 @@
-// AppCommands.swift — Helmsman
+// Guardicore_connector
 // SwiftUI menu bar commands.
 
 import SwiftUI
@@ -86,13 +86,13 @@ struct AppCommands: Commands {
 
         // ── Help additions ──────────────────────────────────────────────────
         CommandGroup(replacing: .help) {
-            Button("Helmsman Help") {
+            Button("Guardicore_connector Help") {
                 NSWorkspace.shared.open(URL(string: "https://helmsman.app/docs")!)
             }
             Button("Open Transcript Folder") {
                 let support = FileManager.default.urls(for: .applicationSupportDirectory,
                                                        in: .userDomainMask).first!
-                NSWorkspace.shared.open(support.appendingPathComponent("Helmsman/transcripts"))
+                NSWorkspace.shared.open(support.appendingPathComponent("Guardicore_connector/transcripts"))
             }
         }
     }

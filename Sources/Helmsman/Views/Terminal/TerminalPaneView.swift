@@ -1,4 +1,4 @@
-// TerminalPaneView.swift — Helmsman
+// Guardicore_connector
 // Wraps TerminalKit's NSViewRepresentable and overlays reconnect UI.
 
 import SwiftUI

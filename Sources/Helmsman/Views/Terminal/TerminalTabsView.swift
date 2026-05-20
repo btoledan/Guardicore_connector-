@@ -1,4 +1,4 @@
-// TerminalTabsView.swift — Helmsman
+// Guardicore_connector
 // Custom tab bar + split terminal/SFTP pane layout.
 
 import SwiftUI

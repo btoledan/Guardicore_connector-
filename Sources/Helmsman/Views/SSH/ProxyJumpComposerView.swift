@@ -1,4 +1,4 @@
-// ProxyJumpComposerView.swift — Helmsman
+// Guardicore_connector
 // Visual editor for multi-hop ProxyJump chains.
 // Each hop can be tested individually before saving.
 

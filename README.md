@@ -1,4 +1,4 @@
-# Helmsman — Guardicore Operations Console
+# Guardicore_connector — Guardicore Operations Console
 
 A macOS application for managing, monitoring, and debugging Guardicore-protected Kubernetes environments over double-hop SSH.
 
@@ -6,7 +6,7 @@ A macOS application for managing, monitoring, and debugging Guardicore-protected
 
 ## What it does
 
-Helmsman connects your Mac directly to Guardicore thin environments and their Kubernetes clusters through a bastion host. From a single window you can:
+Guardicore_connector connects your Mac directly to Guardicore thin environments and their Kubernetes clusters through a bastion host. From a single window you can:
 
 - Open interactive SSH terminals to tester, management, aggregator, and cluster nodes
 - View live cluster topology — nodes, pods, namespaces, GC agent coverage
@@ -33,7 +33,7 @@ Helmsman connects your Mac directly to Guardicore thin environments and their Ku
 make build
 
 # Run the app
-open .build/DerivedData/Build/Products/Debug/Helmsman.app
+open .build/DerivedData/Build/Products/Debug/Guardicore_connector.app
 ```
 
 ---
@@ -42,7 +42,7 @@ open .build/DerivedData/Build/Products/Debug/Helmsman.app
 
 ```
 Sources/
-  Helmsman/
+  Guardicore_connector/
     App/           — App entry point and menu commands
     Models/        — Data models, SSH double-hop, cluster view model, Kube parsers
     Views/

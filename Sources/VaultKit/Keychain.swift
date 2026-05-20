@@ -54,7 +54,7 @@ public enum KeychainError: Error, LocalizedError, Sendable {
 
 // MARK: - Keychain
 
-/// Primary Keychain interface for Helmsman.
+/// Primary Keychain interface for Guardicore_connector.
 /// All methods are synchronous and should be called off the main thread.
 public enum Keychain {
 
@@ -128,7 +128,7 @@ public enum Keychain {
     /// - Parameter prompt: Shown to the user in the Touch ID dialog (when applicable).
     public static func get(
         _ item: KeychainItem,
-        prompt: String = "Helmsman needs your credential"
+        prompt: String = "Guardicore_connector needs your credential"
     ) throws -> String {
         var query = baseQuery(for: item)
         query[kSecReturnData as String] = true

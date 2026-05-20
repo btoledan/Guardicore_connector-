@@ -1,4 +1,4 @@
-// Session.swift — Helmsman (app layer)
+// Session.swift — Guardicore_connector (app layer)
 // The primary data model. Pure Codable; no framework references stored directly.
 // Passwords are kept in VaultKit.Keychain, not in this file.
 

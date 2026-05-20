@@ -1,4 +1,4 @@
-// SettingsView.swift — Helmsman
+// Guardicore_connector
 
 import SwiftUI
 import CoreSpotlight

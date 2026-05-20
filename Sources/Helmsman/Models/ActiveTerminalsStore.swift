@@ -1,4 +1,4 @@
-// ActiveTerminalsStore.swift — Helmsman
+// Guardicore_connector
 // Observable store managing open terminal tabs and their UI state.
 
 import Foundation

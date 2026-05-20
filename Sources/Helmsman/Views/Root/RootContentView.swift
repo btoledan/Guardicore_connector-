@@ -1,4 +1,4 @@
-// RootContentView.swift — Helmsman
+// Guardicore_connector
 // Top-level NavigationSplitView: sidebar + terminal tab container.
 
 import SwiftUI

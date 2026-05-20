@@ -1,4 +1,4 @@
-// SessionStore.swift — Helmsman (app layer)
+// SessionStore.swift — Guardicore_connector (app layer)
 // Observable store: loads/saves sessions and workspace profiles to disk.
 // Passwords are NOT stored here — they live in VaultKit.Keychain.
 
@@ -44,7 +44,7 @@ public final class SessionStore: ObservableObject {
     private init() {
         let support = FileManager.default.urls(for: .applicationSupportDirectory,
                                                in: .userDomainMask).first!
-        let base = support.appendingPathComponent("Helmsman")
+        let base = support.appendingPathComponent("Guardicore_connector")
         try? FileManager.default.createDirectory(at: base, withIntermediateDirectories: true)
         sessionsURL = base.appendingPathComponent("sessions.json")
         profilesURL = base.appendingPathComponent("profiles.json")
@@ -119,7 +119,7 @@ public final class SessionStore: ObservableObject {
 // MARK: - Spotlight Indexer
 
 enum SpotlightIndexer {
-    static let domainID = "com.helmsman.sessions"
+    static let domainID = "com.guardicore_connector.sessions"
 
     static func index(sessions: [Session]) {
         let items: [CSSearchableItem] = sessions.map { session in
@@ -129,7 +129,7 @@ enum SpotlightIndexer {
             attrs.keywords    = session.tags + [session.host, session.kind.rawValue]
             attrs.displayName = session.name
 
-            let activity = NSUserActivity(activityType: "com.helmsman.openSession")
+            let activity = NSUserActivity(activityType: "com.guardicore_connector.openSession")
             activity.title = session.name
             activity.userInfo = ["sessionID": session.id.uuidString]
 

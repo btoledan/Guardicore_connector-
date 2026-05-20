@@ -1,6 +1,6 @@
 // TranscriptWriter.swift — TerminalKit
 // Writes terminal byte stream to a per-session log file.
-// Stored under ~/Library/Application Support/Helmsman/transcripts/<date>/<session>.log
+// Stored under ~/Library/Application Support/Guardicore_connector/transcripts/<date>/<session>.log
 
 import Foundation
 
@@ -23,7 +23,7 @@ public final class TranscriptWriter: @unchecked Sendable {
     public init(sessionID: UUID, sessionName: String) {
         self.sessionID   = sessionID
         self.sessionName = sessionName
-        self.queue       = DispatchQueue(label: "com.helmsman.transcript.\(sessionID)", qos: .utility)
+        self.queue       = DispatchQueue(label: "com.guardicore_connector.transcript.\(sessionID)", qos: .utility)
         self.fileURL     = TranscriptWriter.makeURL(sessionID: sessionID, name: sessionName)
     }
 
@@ -91,7 +91,7 @@ public final class TranscriptWriter: @unchecked Sendable {
 
     private static func makeURL(sessionID: UUID, name: String) -> URL {
         let support = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-        let base    = support.appendingPathComponent("Helmsman/transcripts")
+        let base    = support.appendingPathComponent("Guardicore_connector/transcripts")
 
         // Date folder: YYYY-MM-DD
         let dateStr = ISO8601DateFormatter().string(from: .now).prefix(10)

@@ -16,7 +16,7 @@ public final class ThinEnvStore: ObservableObject {
     private init() {
         let support = FileManager.default.urls(for: .applicationSupportDirectory,
                                                in: .userDomainMask).first!
-        let base = support.appendingPathComponent("Helmsman")
+        let base = support.appendingPathComponent("Guardicore_connector")
         try? FileManager.default.createDirectory(at: base, withIntermediateDirectories: true)
         url = base.appendingPathComponent("thin_environments.json")
         load()

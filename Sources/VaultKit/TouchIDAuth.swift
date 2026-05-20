@@ -8,7 +8,7 @@ import LocalAuthentication
 // MARK: - Auth reason
 
 public enum TouchIDReason: String, Sendable {
-    case unlockVault = "Unlock Helmsman session vault"
+    case unlockVault = "Unlock Guardicore_connector session vault"
     case sudoProxy   = "Authenticate sudo operation"
     case exportKey   = "Export SSH key or credential"
     case custom

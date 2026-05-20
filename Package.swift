@@ -1,12 +1,12 @@
 // swift-tools-version: 5.10
-// Package.swift — Helmsman library modules
+// Package.swift — Guardicore_connector library modules
 // Used for: `swift build` (library modules only) and `swift test` in CI.
 // The full .app bundle requires Xcode: run `make generate && make build`.
 
 import PackageDescription
 
 let package = Package(
-    name: "Helmsman",
+    name: "Guardicore_connector",
     platforms: [
         .macOS(.v13)
     ],

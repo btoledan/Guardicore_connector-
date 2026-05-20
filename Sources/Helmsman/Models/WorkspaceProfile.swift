@@ -1,4 +1,4 @@
-// WorkspaceProfile.swift — Helmsman (app layer)
+// WorkspaceProfile.swift — Guardicore_connector (app layer)
 // Represents a security profile (Prod or Lab) that governs what auth methods
 // are permitted and whether passwords may be stored in Keychain.
 

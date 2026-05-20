@@ -1,4 +1,4 @@
-// KubeContextDockView.swift — Helmsman
+// Guardicore_connector
 // Bottom dock: pinned kube contexts, namespace picker, and snippet runner.
 
 import SwiftUI

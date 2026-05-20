@@ -1,4 +1,4 @@
-// NetworkScannerView.swift — Helmsman
+// Guardicore_connector
 // LAN host discovery: subnet input, live results table, one-click SSH.
 
 import SwiftUI

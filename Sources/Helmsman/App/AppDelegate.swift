@@ -1,4 +1,4 @@
-// AppDelegate.swift — Helmsman
+// AppDelegate.swift — Guardicore_connector
 // Handles Sparkle updater, Spotlight continuation, and app-level macOS events.
 
 import AppKit
@@ -28,7 +28,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     func application(_ application: NSApplication,
                      continue userActivity: NSUserActivity,
                      restorationHandler: @escaping ([NSUserActivityRestoring]) -> Void) -> Bool {
-        guard userActivity.activityType == "com.helmsman.openSession",
+        guard userActivity.activityType == "com.guardicore_connector.openSession",
               let idString = userActivity.userInfo?["sessionID"] as? String,
               let sessionID = UUID(uuidString: idString) else {
             return false
@@ -65,6 +65,6 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 // MARK: - Notification names
 
 extension Notification.Name {
-    static let openSessionByID         = Notification.Name("com.helmsman.openSessionByID")
-    static let applicationWillTerminate = Notification.Name("com.helmsman.willTerminate")
+    static let openSessionByID         = Notification.Name("com.guardicore_connector.openSessionByID")
+    static let applicationWillTerminate = Notification.Name("com.guardicore_connector.willTerminate")
 }

@@ -8,28 +8,28 @@ import Foundation
 public enum CredentialKind: String, Sendable, CaseIterable {
     /// Passphrase for an SSH private key (identity file).
     /// Stored per key-file path.
-    case sshIdentityPassphrase = "com.helmsman.vault.ssh.identity"
+    case sshIdentityPassphrase = "com.guardicore_connector.vault.ssh.identity"
 
     /// Password for a gateway / bastion hop (password-based auth).
     /// Only created in Lab workspace profiles.
-    case gatewayPassword = "com.helmsman.vault.ssh.gateway"
+    case gatewayPassword = "com.guardicore_connector.vault.ssh.gateway"
 
     /// Password for a direct SSH session (user@host password auth).
     /// Only created in Lab workspace profiles.
-    case sshPassword = "com.helmsman.vault.ssh.password"
+    case sshPassword = "com.guardicore_connector.vault.ssh.password"
 
-    /// Master unlock secret for the Helmsman session vault.
-    case vaultUnlock = "com.helmsman.vault.unlock"
+    /// Master unlock secret for the Guardicore_connector session vault.
+    case vaultUnlock = "com.guardicore_connector.vault.unlock"
 
     // MARK: Helpers
 
     /// Human-readable label shown in Keychain Access.
     public var keychainLabel: String {
         switch self {
-        case .sshIdentityPassphrase: return "Helmsman SSH Key Passphrase"
-        case .gatewayPassword:       return "Helmsman Gateway Password"
-        case .sshPassword:           return "Helmsman SSH Password"
-        case .vaultUnlock:           return "Helmsman Vault Unlock"
+        case .sshIdentityPassphrase: return "Guardicore_connector SSH Key Passphrase"
+        case .gatewayPassword:       return "Guardicore_connector Gateway Password"
+        case .sshPassword:           return "Guardicore_connector SSH Password"
+        case .vaultUnlock:           return "Guardicore_connector Vault Unlock"
         }
     }
 

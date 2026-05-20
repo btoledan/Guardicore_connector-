@@ -1,4 +1,4 @@
-// MultiExecView.swift — Helmsman
+// Guardicore_connector
 // Execute a command across selected terminal tabs simultaneously.
 // Features: dry-run preview, stop-on-first-failure toggle, stderr merge, save last command set.
 

@@ -1,4 +1,4 @@
-// TunnelManagerView.swift — Helmsman
+// Guardicore_connector
 // Add / edit / delete labeled SSH tunnels. Exports one-liners for runbooks.
 
 import SwiftUI

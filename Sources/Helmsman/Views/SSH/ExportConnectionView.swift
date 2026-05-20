@@ -1,4 +1,4 @@
-// ExportConnectionView.swift — Helmsman
+// Guardicore_connector
 // Exports connection strings (ssh, scp, KUBECONFIG) for runbooks / chat pastes.
 // Template mode adds {{NAMESPACE}} etc. placeholders; off by default.
 
