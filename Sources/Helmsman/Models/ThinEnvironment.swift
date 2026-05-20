@@ -18,7 +18,7 @@ public struct ThinEnvironment: Identifiable, Codable, Hashable, Sendable {
     public var clusters:     [GuardicoreCluster]
     public var sortOrder: Int
 
-    public static let defaultPassword = ""
+    public static let defaultPassword = "tisctmt1"
     public static let defaultUser     = "root"
     public static let mgmtHost        = "mgmt"
     static let password = defaultPassword
